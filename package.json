@@ -1,0 +1,25 @@
+{
+  "name": "gulp_tutorial",
+  "version": "1.0.0",
+  "description": "https://www.sitepoint.com/introduction-gulp-js/ tutorial on Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raydot/gulp_tutorial.git"
+  },
+  "keywords": [
+    "node",
+    "gulp",
+    "js",
+    "javascript"
+  ],
+  "author": "Dave Kanter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raydot/gulp_tutorial/issues"
+  },
+  "homepage": "https://github.com/raydot/gulp_tutorial#readme"
+}
