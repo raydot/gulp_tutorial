@@ -5,6 +5,7 @@ var
     gulp = require('gulp'),
     newer = require('gulp-newer'),
     imagemin = require('gulp-imagemin'),
+    htmlclean = require('gulp-htmlclean'),
 
     //development mode?
     devBuild = (process.env.NODE_ENV !== 'production'),
@@ -24,4 +25,19 @@ gulp.task('images', function() {
         .pipe(newer(out))
         .pipe(imagemin({ optimizationLevel: 5 }))
         .pipe(gulp.dest(out));
+});
+
+gulp.task('html', ['images'], function() { 
+    //square brackets means run images first
+    var
+        out = folder.build + 'html/',
+        page = gulp.src(folder.src + 'html/**/*')
+            .pipe(newer(out));
+
+    // minify production code
+    if (!devBuild) {
+        page = page.pipe(htmlclean());
+    }
+
+    return page.pipe(gulp.dest(out));
 });

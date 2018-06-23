@@ -24,6 +24,7 @@
   "homepage": "https://github.com/raydot/gulp_tutorial#readme",
   "devDependencies": {
     "gulp": "^4.0.0",
+    "gulp-htmlclean": "^2.7.22",
     "gulp-imagemin": "^4.1.0",
     "gulp-newer": "^1.4.0"
   }
